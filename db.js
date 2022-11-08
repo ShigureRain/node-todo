@@ -26,7 +26,7 @@ const db = {
       const string = JSON.stringify(list)
       fs.writeFile(dbPath, string + '\n', (err) => {
         if (err) {return reject(err)}
-        resolve()
+        resolve() 
       })
     }))
   }
